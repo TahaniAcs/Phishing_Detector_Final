@@ -39,6 +39,28 @@ def train_and_load_model():
     
     return model, columns[:-1]
 
+# ----------------- NEW FUNCTION: Contact Info Block -----------------
+def contact_info():
+    """Adds a custom contact information footer in the main column."""
+    st.markdown("""
+        <style>
+        /* Style for the Custom Contact Box */
+        .contact-box {
+            background-color: #6A5ACD; /* Medium Purple */
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px; /* Space above the box */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            font-size: 16px;
+        }
+        </style>
+        """, unsafe_allow_html=True)
+    
+    st.markdown("<div class='contact-box'>For inquiries, please contact: <strong>Tehani Althubaiti</strong></div>", unsafe_allow_html=True)
+
+
 # ----------------- 3. Streamlit Main App -----------------
 def main():
     st.set_page_config(page_title="Phishing Detector AI", layout="wide", initial_sidebar_state="collapsed")
@@ -87,8 +109,8 @@ def main():
     header_col1, header_col2, header_col3 = st.columns([1, 4, 1])
 
     with header_col3:
-        # Replaced Logo with simple text header
-        st.header("TAQAT", divider='gray') 
+        # 🚨 تم حذف الوسيط divider='gray' لإزالة الخط 🚨
+        st.header("TU University") 
 
     # --- Two-Column Layout for Main Content ---
     col_input, col_analysis = st.columns([1, 2])
@@ -112,7 +134,7 @@ def main():
         
         # Unique Button
         if st.button("Analyze Link", key="primary_analyze_btn_live"): 
-             st.session_state['analysis_started_live'] = True
+            st.session_state['analysis_started_live'] = True
         
     # -------------------------------------------------------------
     # RIGHT COLUMN: Analysis and Results
@@ -165,8 +187,16 @@ def main():
             if feats_dict['kw'] == 1:
                 analysis_text += "- ⚠️ **Suspicious Keywords:** Contains sensitive words like 'login' or 'bank'.<br>"
             
+            # Fallback for no suspicious features detected
+            if not analysis_text:
+                 st.markdown("<div class='analysis-box'><strong>MODEL INSIGHTS:</strong><br>No highly suspicious features detected.</div>", unsafe_allow_html=True)
+            else:
+                 st.markdown(f"<div class='analysis-box'><strong>MODEL INSIGHTS:</strong><br>{analysis_text}</div>", unsafe_allow_html=True)
 
-            st.markdown(f"<div class='analysis-box'><strong>MODEL INSIGHTS:</strong><br>{analysis_text or 'No highly suspicious features detected.'}</div>", unsafe_allow_html=True)
+    # -------------------------------------------------------------
+    # CONTACT FOOTER ADDED BELOW THE MAIN CONTENT COLUMNS
+    # -------------------------------------------------------------
+    contact_info()
 
 
 if __name__ == '__main__':
