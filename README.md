@@ -30,7 +30,7 @@
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/TahaniAcs/Cyber Shield](https://github.com/TahaniAcs/Cyber Shield.git)
+    git clone [https://github.com/TahaniAcs/Phishing_Detector_Final.git](https://github.com/TahaniAcs/Phishing_Detector_Final.git)
     ```
 2.  **Install requirements:**
     ```bash
