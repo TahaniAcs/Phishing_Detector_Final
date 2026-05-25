@@ -1,6 +1,6 @@
 # 🛡️ Cyber Shield: AI Phishing URL Detector
 
-[Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://phishingdetectorfinal-en6dhbmn9nxs92kyeverrd.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://phishingdetectorfinal-en6dhbmn9nxs92kyeverrd.streamlit.app/)
 
 > An advanced AI-powered tool designed to detect phishing URLs in real-time using Machine Learning algorithms.
 
@@ -28,10 +28,10 @@
 
 ## 🚀 How to Run Locally
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/TahaniAcs/Phishing_Detector_Final.git](https://github.com/TahaniAcs/Phishing_Detector_Final.git)
-    ```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/TahaniAcs/Phishing_Detector_Final.git
+   
 2.  **Install requirements:**
     ```bash
     pip install -r requirements.txt
