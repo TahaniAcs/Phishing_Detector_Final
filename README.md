@@ -1,5 +1,6 @@
 # 🛡️ Cyber Shield: AI Phishing URL Detector
 
+
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://phishingdetectorfinal-en6dhbmn9nxs92kyeverrd.streamlit.app/)
 
 > An advanced AI-powered tool designed to detect phishing URLs in real-time using Machine Learning algorithms.
