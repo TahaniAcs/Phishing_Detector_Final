@@ -5,7 +5,7 @@
 > An advanced AI-powered tool designed to detect phishing URLs in real-time using Machine Learning algorithms.
 
 ## 📖 About The Project
-**Phising_Detector_Final** is a security tool built with **Python** and **Streamlit** that analyzes URLs to identify potential phishing threats. Unlike simple blacklists, this tool uses a **Random Forest** machine learning model to examine the structure of the URL (lexical features) and predict whether it is safe or malicious with high accuracy.
+**Cyber Shield AI** is a security tool built with **Python** and **Streamlit** that analyzes URLs to identify potential phishing threats. Unlike simple blacklists, this tool uses a **Random Forest** machine learning model to examine the structure of the URL (lexical features) and predict whether it is safe or malicious with high accuracy.
 
 ## ✨ Key Features
 
@@ -30,7 +30,7 @@
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/TahaniAcs/Phising_Detector_Final](https://github.com/TahaniAcs/Phising_Detector_Final.git)
+    git clone [https://github.com/TahaniAcs/Cyber Shield](https://github.com/TahaniAcs/Cyber Shield.git)
     ```
 2.  **Install requirements:**
     ```bash
